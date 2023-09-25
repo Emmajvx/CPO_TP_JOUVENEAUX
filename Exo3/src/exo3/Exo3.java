@@ -18,13 +18,13 @@ public class Exo3 {
     public static void main(String[] args) {
         int operateur;
         int operande1;
-        int operande2;
-        int result = 0;
+        double operande2;
+        double result = 0;
         
         Scanner sc = new Scanner(System.in);
         System.out.println("\n Please enter the operator:\n 1) add \n 2) substract \n 3) multiply \n 4) divide \n 5) modulo");
         operateur=sc.nextInt();
-        if (operateur<1 || operateur>5){ 
+        while (operateur<1 || operateur>5){ 
             System.out.println("\n please enter an operator between 1 and 5"); //ou alors System.exit(0);
             operateur=sc.nextInt(); 
         }
@@ -48,6 +48,10 @@ public class Exo3 {
             result= operande1%operande2; 
         }
        System.out.println("\n The result is : " +result); 
+    }
+
+    private static void While(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

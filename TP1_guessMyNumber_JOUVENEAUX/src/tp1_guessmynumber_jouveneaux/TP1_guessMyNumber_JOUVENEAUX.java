@@ -19,6 +19,7 @@ public class TP1_guessMyNumber_JOUVENEAUX {
     public static void main(String[] args) {
         int test=0;
         int number=1000;
+        int essai=0;
         
         Scanner sc = new Scanner(System.in);
         Random generateurAleat = new Random();
@@ -27,6 +28,7 @@ public class TP1_guessMyNumber_JOUVENEAUX {
         System.out.println("\n Veuillez saisir un nombre entre 1 et 100:");
         test = sc.nextInt();
         while (number!=test){
+            essai=essai+1;
             if (number>test){
                 System.out.println("\n Votre nombre est trop petit, veuillez essayer a nouveau:");
                 test = sc.nextInt();
@@ -36,7 +38,7 @@ public class TP1_guessMyNumber_JOUVENEAUX {
                 test = sc.nextInt();
             }
         }
-        System.out.println("\n Vous avez reussi ! \n le nombre etait "+number);
+        System.out.println("\n Vous avez reussi en "+essai+"! \n le nombre etait "+number);
 
     }
     

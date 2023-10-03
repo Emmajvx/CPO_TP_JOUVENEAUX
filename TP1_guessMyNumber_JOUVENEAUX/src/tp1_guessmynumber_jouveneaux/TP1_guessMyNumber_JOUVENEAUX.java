@@ -5,6 +5,7 @@
 package tp1_guessmynumber_jouveneaux;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -16,14 +17,26 @@ public class TP1_guessMyNumber_JOUVENEAUX {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        int test=0;
+        int number=1000;
+        
+        Scanner sc = new Scanner(System.in);
         Random generateurAleat = new Random();
-        int nb1 = generateurAleat.nextInt(100);
-        int nb2 = generateurAleat.nextInt(100);
-        int nb3 = generateurAleat.nextInt(100);
-        int nb4 = generateurAleat.nextInt(100);
-        int nb5 = generateurAleat.nextInt(100);
-        int number = generateurAleat.nextInt(100);
+        
+        number = generateurAleat.nextInt(100);
         System.out.println("\n Veuillez saisir un nombre entre 1 et 100:");
+        test = sc.nextInt();
+        while (number!=test){
+            if (number>test){
+                System.out.println("\n Votre nombre est trop petit, veuillez essayer a nouveau:");
+                test = sc.nextInt();
+            }
+            if (number<test){
+                System.out.println("\n Votre nombre est trop grand, veuillez essayer a nouveau:");
+                test = sc.nextInt();
+            }
+        }
+        System.out.println("\n Vous avez reussi ! \n le nombre etait "+number);
 
     }
     

@@ -17,16 +17,33 @@ public class BouteilleBiere {
     
     public void lireEtiquette() {
         System.out.println("Bouteille de " + nom +" (" + degreAlcool +
-        " degres) \nBrasserie : " + brasserie ) ;
+        " degres) \nBrasserie : " + brasserie +ouverte) ;
     }
     
     
     public BouteilleBiere(String unNom, double unDegre, String 
-    uneBrasserie) {
+    uneBrasserie, boolean ouvert) {
     nom = unNom;
     degreAlcool = unDegre;
     brasserie = uneBrasserie;
     ouverte = false;
+    }
+    public void Decapsuler() {
+        if (ouverte==true){
+           System.out.println("erreur : biere \n"+ nom+"déjà ouverte") ; 
+        }
+        if (ouverte==false){
+           ouverte=true; 
+        }
+    }
+    
+    @Override
+    public String toString() {
+    String chaine_a_retourner;
+    chaine_a_retourner = (nom + " (" + degreAlcool + " degrés) ouverte?" ); 
+    if (ouverte == true ) chaine_a_retourner += "oui" ;
+    else chaine_a_retourner += "non" ;
+    return chaine_a_retourner ;
 }
 
 }

@@ -15,24 +15,30 @@ public class TP2_Bieres_JOUVENEAUX {
      */
     public static void main(String[] args) {
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls", 
-        7.0 ,"Dubuisson") ;
+        7.0 ,"Dubuisson",true) ;
         uneBiere.lireEtiquette();
+        System.out.println(uneBiere) ;
+
         
         BouteilleBiere secondeBiere = new BouteilleBiere("Leffe", 
-        6.6 ,"Abbaye de Leffe") ;
+        6.6 ,"Abbaye de Leffe", false) ;
+        secondeBiere.Decapsuler();
         secondeBiere.lireEtiquette();
         
         BouteilleBiere troisBiere = new BouteilleBiere("goudale", 
-        6.0 ,"Abbaye de goudale") ;
+        6.0 ,"Abbaye de goudale",true) ;
         troisBiere.lireEtiquette();
         
         BouteilleBiere quatreBiere = new BouteilleBiere("La chouffe", 
-        6.8 ,"Abbaye de Chouffe") ;
+        6.8 ,"Abbaye de Chouffe",false) ;
+        quatreBiere.Decapsuler();
         quatreBiere.lireEtiquette();
         
         BouteilleBiere cinqBiere = new BouteilleBiere("Leffe", 
-        6.6 ,"Abbaye de Leffe") ;
+        6.6 ,"Abbaye de Leffe",true) ;
         cinqBiere.lireEtiquette();
+        
+        quatreBiere.Decapsuler();
         
         
 

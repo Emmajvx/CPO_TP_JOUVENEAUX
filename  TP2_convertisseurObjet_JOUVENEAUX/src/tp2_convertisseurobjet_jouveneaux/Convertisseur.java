@@ -12,7 +12,7 @@ public class Convertisseur {
     
     int nbConversions;
     public Convertisseur () {
-        nbConversions = 1 ;
+        nbConversions = 0 ;
     }
 
     public double CelciusVersKelvin(double tCelcius) {

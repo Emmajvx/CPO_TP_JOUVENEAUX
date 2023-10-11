@@ -59,7 +59,7 @@ public class TP2_convertisseurObjet_JOUVENEAUX {
             unite2="Kelvin";
         }
         System.out.println("\n"+temp+ " degre "+unite1+" est egal a "+tempfin+" degre "+unite2);
-        System.out.println(convertisseur.toString());
+        System.out.println(convertisseur.toString()+1);
 
     }
     

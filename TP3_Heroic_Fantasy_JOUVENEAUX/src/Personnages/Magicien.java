@@ -4,6 +4,8 @@
  */
 package Personnages;
 
+import Armes.Baton;
+
 /**
  *
  * @author emmaj
@@ -25,4 +27,15 @@ public class Magicien extends Personnages{
         }
     
     }
+    public void Armepredilection(){
+        int a=0;
+        for (int i=0; i<liste_arme.size(); i++){
+            if (liste_arme.get(i) instanceof Baton){
+                a += 1;
+            }
+    }
+        System.out.println("Le magicien a "+a+" arme(s) de prédilection(s)");
+        
+    }
+    
 }

@@ -40,7 +40,7 @@ private boolean etat;
     
     /**
      *permet de savoir si la cellule est etainte 
-     * @return true si la cellule est etainte et false si elle est allum?e
+     * @return true si la cellule est etainte et false si elle est allumee
      */
     public boolean  estEteint(){
         if (etat==false){

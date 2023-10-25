@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package lightoff_jouveneaux_version_console;
+import lightoff_jouveneaux_version_console.*;
 
 /**
  *
@@ -23,6 +24,10 @@ public class LightOff_JOUVENEAUX_version_console {
         
         etat1.toString();
         System.out.println(etat1.toString());
+        
+        GrilleDeJeu nouvelle_grille =new GrilleDeJeu (6,6);
+        nouvelle_grille.melangerMatriceAleatoirement(8);
+        System.out.println(nouvelle_grille);
     }
     
 }

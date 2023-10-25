@@ -32,7 +32,7 @@ private boolean etat;
     }
     
     /**
-     *permet d'etaindre chaque cellule, qu'elle soit allum?es ou deja ?teinte
+     *permet d'etaindre la cellule, qu'elle soit allum?es ou deja ?teinte
      */
     public void  eteindreCellule(){
         etat=false;    
@@ -60,7 +60,7 @@ private boolean etat;
     }
 
     /**
-     *permet d'afficher la correspondance en grille de chaque cellule
+     *permet d'afficher la correspondance en grille de la cellule
      * @return X si elle est allum?e et O si elle est eteinte
      */
     @Override

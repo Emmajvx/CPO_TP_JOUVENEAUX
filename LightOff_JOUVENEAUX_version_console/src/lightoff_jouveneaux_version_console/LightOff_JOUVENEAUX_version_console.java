@@ -20,6 +20,9 @@ public class LightOff_JOUVENEAUX_version_console {
         etat1.activerCellule();
         System.out.println(etat2.getEtat());
         System.out.println(etat1.getEtat());
+        
+        etat1.toString();
+        System.out.println(etat1.toString());
     }
     
 }

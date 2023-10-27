@@ -102,7 +102,7 @@ public class GrilleDeJeu {
      */
     public void activerColonneDeCellules(int idColonne){
             for (int i=0;i<nbLignes;i++){
-                matriceCellules[idColonne][i].activerCellule();
+                matriceCellules[i][idColonne].activerCellule();
             }
     }
     
@@ -130,7 +130,7 @@ public class GrilleDeJeu {
      */
     public boolean cellulesToutesEteintes(){
         for (int i =0; i<nbLignes;i++){
-            for (int j=0;i<nbColonnes;j++){
+            for (int j=0;j<nbColonnes;j++){
                 boolean verif = matriceCellules[i][j].estEteint();
                 if (verif==false){
                     return false;

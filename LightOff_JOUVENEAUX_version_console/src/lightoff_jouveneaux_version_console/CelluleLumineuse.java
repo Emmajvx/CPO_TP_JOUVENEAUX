@@ -26,7 +26,7 @@ private boolean etat;
         if (etat==true){
             etat=false;
         }
-        if (etat==false){
+        else{
             etat=true;
         }
     }

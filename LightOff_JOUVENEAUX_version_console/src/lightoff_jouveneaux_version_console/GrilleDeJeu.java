@@ -148,7 +148,7 @@ public class GrilleDeJeu {
     public String toString() {
         String chaine = "   |";
         for (int i=0;i<nbLignes;i++){
-                chaine+= " "+i+" |";
+            chaine+= " "+i+" |";
         }
         
         chaine += "\n";

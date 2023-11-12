@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package lightoff_jouveneaux_version_console;
+import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JButton;
 
@@ -24,8 +25,16 @@ public class CelluleGraphique extends JButton{
     // Methode g?rant le dessin de la cellule 
     @Override
     protected void paintComponent(Graphics g) {
-    super.paintComponent(g); 
-    this.setText(celluleLumineuseAssociee.toString());
+    super.paintComponent(g);
+    int w=this.getWidth();
+    int h=this.getHeight();
+    if (celluleLumineuseAssociee.estEteint()==true){
+        g.setColor(new Color(173, 216, 230));
+    }
+    else{
+        g.setColor(Color.lightGray);
+    }
+    g.fillOval(2, 2, w-4, h-4);
     }
     
 }
